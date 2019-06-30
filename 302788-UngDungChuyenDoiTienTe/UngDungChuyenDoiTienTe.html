@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+
+    <input id ="soTien" type="number" value=""/>
+    <select id = "fromeCurrency" onchange="" >
+        <option value="VND">VND</option>
+        <option value="USD">USD</option>
+    </select>
+    <select id = "toCurrency"onchange="" >
+        <option value="USD">USD</option>
+        <option value="VND">VND</option>
+    </select>
+    <button onclick="convert()">Convert</button>
+
+    </form>
+    <script>
+        function convert() {
+            let soTiennhap = document.getElementById("soTien" value "");
+            let soTien = Number(soTiennhap);
+            let ketQua = soTien * 23000
+            alert (ketQua)
+        }
+
+    </script>
+</body>
+</html>
