@@ -7,11 +7,11 @@
 <body>
 
     <input id ="soTien" type="number" value=""/>
-    <select id = "fromeCurrency" onchange="" >
+    <select id = "fromeCurrency" >
         <option value="VND">VND</option>
         <option value="USD">USD</option>
     </select>
-    <select id = "toCurrency"onchange="" >
+    <select id = "toCurrency" >
         <option value="USD">USD</option>
         <option value="VND">VND</option>
     </select>
@@ -19,13 +19,19 @@
 
     </form>
     <script>
-        function convert() {
-            let soTiennhap = document.getElementById("soTien" value "");
-            let soTien = Number(soTiennhap);
-            let ketQua = soTien * 23000
-            alert (ketQua)
+        let frome = document.getElementById("fromeCurrency")
+        function convert () {
+            let soTienNhap = document.getElementById("soTien")
+            value
+            "";
+            if (fromeCurrency == VND, toCurrency == USD) {
+                alert("Số USD là: " + soTienNhap / 23000);
+            } else if (fromeCurrency == USD , toCurrency == VND) {
+                alert("Số VND là: " + soTienNhap * 23000)
+            } else {
+                alert(soTienNhap)
+            }
         }
-
     </script>
 </body>
 </html>
