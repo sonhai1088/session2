@@ -8,30 +8,24 @@
 
     <input id ="soTien" type="number" value=""/>
     <select id = "fromeCurrency" >
-        <option value="VND">VND</option>
-        <option value="USD">USD</option>
+        <option value="23000">VND</option>
+        <option value="1">USD</option>
     </select>
     <select id = "toCurrency" >
-        <option value="USD">USD</option>
-        <option value="VND">VND</option>
+        <option value="1">USD</option>
+        <option value="23000">VND</option>
     </select>
     <button onclick="convert()">Convert</button>
 
     </form>
     <script>
-        let frome = document.getElementById("fromeCurrency")
-        function convert () {
-            let soTienNhap = document.getElementById("soTien")
-            value
-            "";
-            if (fromeCurrency == VND, toCurrency == USD) {
-                alert("Số USD là: " + soTienNhap / 23000);
-            } else if (fromeCurrency == USD , toCurrency == VND) {
-                alert("Số VND là: " + soTienNhap * 23000)
-            } else {
-                alert(soTienNhap)
-            }
-        }
+       function convert() {
+           let input = document.getElementById("soTien");
+           let from = document.getElementById("fromeCurrency");
+           let to = document.getElementById("toCurrency");
+           let account = parseFloat(input.value) / parseFloat(from.value) * parseFloat(to.value);
+           document.write("Số tiền chuyển đổi là: " + account)
+       }
     </script>
 </body>
 </html>
